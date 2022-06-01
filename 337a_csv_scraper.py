@@ -1,4 +1,8 @@
-from email import header
+# snimit cemo podatke scrapanja u csv-fajl tako da tjekom igre pozezemo citate iz njega. Njega cemo nadopunjavati npr jedanput tjedno
+# takodjer cemo tu funkcionalnost napraviti u posebnom py-fajlu jer ne zelimo svaki put kad igramo snimati u csv-fajl.
+# kopiramo sve od početka do def start_game() u taj novi py-fajl
+# svaki put kad run-a updejtamo nove citate i upišemo u csv-fajl
+# izmjena koja ce uciniti da run ne skrejpa svaki put - refactoring
 import requests
 from bs4 import BeautifulSoup
 from csv import DictWriter

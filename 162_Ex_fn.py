@@ -1,0 +1,1 @@
+dani = {1 : "pon", 2:"uto", 3:"sri", 4:"cet", 5:"pet", 6:"sub", 7:"ned"}

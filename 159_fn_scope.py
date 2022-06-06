@@ -29,6 +29,7 @@ greet()
 #! ako imamo vise fn u hijerarhiji "nonlocal"
 
 def outer():
+    '''pokusaj da se vidi ishod doc-string-doca'''
     count = 0
     def inner():
         nonlocal count
@@ -37,3 +38,4 @@ def outer():
     return inner()
 
 print(outer())
+print(outer.__doc__)    #! zakljucak, dunder se poziva bez ()

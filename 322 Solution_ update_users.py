@@ -16,6 +16,8 @@ def update_users(old_first, old_last, new_first, new_last):
                 csv_writer.writerow(row)
 
     return f"Users updated: {count}."
+
+
 print(update_users("Grace", "Hopper", "Hello", "World")) # Users updated: 1.
 print(update_users("Colt", "Steele", "Boba", "Fett")) # Users updated: 2.
 print(update_users("Not", "Here", "Still not", "Here")) # Users updated: 0.

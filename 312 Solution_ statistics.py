@@ -5,5 +5,5 @@ def statistics(file_name):
     return { "lines": len(lines),
              "words": sum(len(line.split(" ")) for line in lines),
              "characters": sum(len(line) for line in lines) }
-    
-print(statistics("310 Exercise_ copy.html"))
+
+statistics('story.txt') 	# {'lines': 172, 'words': 2145, 'characters': 11227}

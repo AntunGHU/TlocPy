@@ -1,0 +1,1 @@
+http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/

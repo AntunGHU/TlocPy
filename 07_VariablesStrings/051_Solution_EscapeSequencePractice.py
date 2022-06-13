@@ -1,4 +1,4 @@
- # Set the message variable equal to any string containing a new-line escape sequence
+# Set the message variable equal to any string containing a new-line escape sequence
 message = "Hello \n goodbye"
 
 
@@ -8,5 +8,4 @@ mountains = "/\\/\\/\\"
 
 
 # Set the quotation variable to any string that contains an escaped double quotation mark
-
 quotation = "My cat said \"meow\""

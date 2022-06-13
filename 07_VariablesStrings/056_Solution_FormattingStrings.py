@@ -1,4 +1,5 @@
 first = "Colt"
 last = "Steele"
 
-formatted = "First Name: {0}, Last Name: {1}".format(first, last)
+formatted = f"First Name: {first}, Last Name: {last}"
+print(formatted)

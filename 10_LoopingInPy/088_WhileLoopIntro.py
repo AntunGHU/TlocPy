@@ -1,3 +1,9 @@
+user_response = input("say magic word! ")
+while user_response != "please":
+    user_response=input("Ah, ha, ha, you didn't say the magiv word: ")
+print("Bravo, you guessed my magic word!")
+
+
 msg = input("What is the secret password? \n")
 while msg != "bananas":
     print("WRONG!")

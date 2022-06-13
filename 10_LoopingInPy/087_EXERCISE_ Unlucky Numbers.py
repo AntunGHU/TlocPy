@@ -7,7 +7,7 @@ for num in range(1,21):
         print(f"Broj {num} je paran!")
         
 
-#! Coltov dodatak
+#! Coltov dodatak, varijabla state se deklarira unutar for
 
 for num in range(1,21):
     if num == 4 or num == 13:

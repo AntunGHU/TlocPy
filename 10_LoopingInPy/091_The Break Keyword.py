@@ -1,6 +1,3 @@
-from regex import E
-
-
 while True:
     command = input("Type 'e' to exit: ")
     if command == "e":

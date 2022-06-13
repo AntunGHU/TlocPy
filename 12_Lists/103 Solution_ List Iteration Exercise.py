@@ -9,3 +9,5 @@ result = ''
 for s in sounds:
     result += s
 result = result.upper()
+
+print(result)

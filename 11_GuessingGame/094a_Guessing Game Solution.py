@@ -11,7 +11,9 @@ while True:
         print("Previsoko!")
     else:
         print("Bravo, pogodak!")
-        ponuda = input("Jos jednu partiju? (y/n) \n")
+        ponuda = input("Jos jednu partiju? (y/n) \n").lower()
+        while ponuda not in ("y", "yes", "n", "no"):
+            ponuda = input("Jos jednu partiju? (y/n) \n").lower()
         if ponuda == "n":
             print("Hvala za igranje! Drugi put!")
             break

@@ -2,7 +2,7 @@
 # Next, define a list called nums . It should be a list # containing all the numbers between 1 and 99 (including # 99).  Don't type this out manually! Use what we learned at the end of the previous video!
 
 # Define my_stuff
-my_stuff = [1,2,3,4, "C", 2.1]
+my_stuff = ["predavanje", 1,[2,3],4.2, "C", 2.1]
 
 # Define nums
 nums = list(range(1,100))

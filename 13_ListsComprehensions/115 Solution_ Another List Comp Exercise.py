@@ -2,3 +2,10 @@
 # USE A LIST COMPREHENSION.
 
 answer = [val for val in range(1,101) if val % 12 == 0]
+print(answer)
+
+answer=[]
+for val in range(1,101):
+    if val%12==0:
+        answer.append(val)
+print(answer)

@@ -2,3 +2,7 @@
 # Use a list comprehension!
 
 answer = [char for char in "amazing" if char not in ["a", "e", "i", "o", "u"]]
+print(answer)
+
+answer = [char for char in "amazing" if char not in "aeiou"]
+print(answer)

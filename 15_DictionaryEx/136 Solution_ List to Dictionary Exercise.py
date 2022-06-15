@@ -4,6 +4,9 @@
 # use the person variable in your answer
 
 person = [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]]
-# answer = {k:v for k,v in person}
-# answer = {thing[0]: thing[1] for thing in person}
-answer = dict(person)
+answer1 = {k:v for k,v in person}
+answer2 = {thing[0]: thing[1] for thing in person}
+answer3 = dict(person)
+print(answer1)
+print(answer2)
+print(answer3)

@@ -1,33 +1,39 @@
-from functools import total_ordering
+# global scope
+instructor = "Colt"
+def say_hello():
+    return f"Hello {instructor}"
+print(instructor)
+print(say_hello())
 
+# local scope
+def say_hello():
+    instructorb = "Coltb"
+    return f"Hello {instructorb}"
+# print(instructorb)  # NameError: name 'instructorb' is not defined. Did you mean: 'instructor'?
+print(say_hello())
+
+# global uz promjenu unutar func
 total = 0
 def increment():
-    global total
+    global total    # samo zbog ovog radi!
     total += 1
     return total
-
 print(increment())
 
 name = "Rustty"
 def greet():
-    global name
+    global name     # samo zbog ovog radi!
     name += "Steele"
-    print(name)
-    
-greet()
+    return name
+print(greet())
 
-#! dakle, da bi varijabla definirana van funkcije mogla biti mjenjana, mora se ipak predstaviti i u funkciji sa posebnim predstavljanjem "global"
-
-#! ali ako se ne mjenja predstavljanje netreba
-
+# ali ako se ne mjenja predstavljanje netreba
 name = "Rustty"
 def greet():
-    print(name)
-    
-greet()
+    return name
+print(greet())
 
 #! ako imamo vise fn u hijerarhiji "nonlocal"
-
 def outer():
     '''pokusaj da se vidi ishod doc-string-doca'''
     count = 0
@@ -36,6 +42,5 @@ def outer():
         count +=1
         return count
     return inner()
-
 print(outer())
 print(outer.__doc__)    #! zakljucak, dunder se poziva bez ()

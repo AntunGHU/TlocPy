@@ -4,5 +4,5 @@
 def capitalize(string):
     return string[:1].upper() + string[1:]
     
-capitalize("tim") # "Tim"
-capitalize("matt") # "Matt"
+print(capitalize("tim")) # "Tim"
+print(capitalize("matt")) # "Matt"

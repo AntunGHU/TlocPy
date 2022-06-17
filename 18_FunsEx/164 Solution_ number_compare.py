@@ -5,6 +5,6 @@ def number_compare(a,b):
         return "Second is greater"
     return "Numbers are equal"
     
-number_compare(1,1) # "Numbers are equal"
-number_compare(1,0) # "First is greater"
-number_compare(2,4) # "Second is greater"
+print(number_compare(1,1)) # "Numbers are equal"
+print(number_compare(1,0)) # "First is greater"
+print(number_compare(2,4)) # "Second is greater"

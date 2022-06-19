@@ -5,12 +5,8 @@ def combine_words(word,**kwargs):
         return word + kwargs['suffix']
     return word
     
-combine_words("child")  #'child'
-
-combine_words("child", prefix="man")  #'manchild'
-
-combine_words("child", suffix="ish")  #'childish'
-
-combine_words("work", suffix="er")  #'worker'
-
-combine_words("work", prefix="home")  #'homework'
+print(combine_words("child"))  #'child'
+print(combine_words("child", prefix="man"))  #'manchild'
+print(combine_words("child", suffix="ish"))  #'childish'
+print(combine_words("work", suffix="er"))  #'worker'
+print(combine_words("work", prefix="home"))  #'homework'

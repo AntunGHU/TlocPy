@@ -1,0 +1,6 @@
+print(len("awesome"))
+print(len((1,2,3,4)))
+print(len({1,2,3,4,5,5}))
+print(len([1,2,3,4,5,6]))
+print(len(range(0,100)))
+print(len({"a":1,"b":2,"c":3}))

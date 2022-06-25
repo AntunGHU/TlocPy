@@ -14,8 +14,6 @@
 def interleave(str1,str2):
     return ''.join(''.join(x) for x in (zip(str1,str2)))
 
-interleave('hi','ha')    # 'hhia'
-
-interleave('aaa', 'zzz')  # 'azazaz'
-
-interleave('lzr','iad') #  'lizard'   
+print(interleave('hi','ha'))    # 'hhia'
+print(interleave('aaa', 'zzz'))  # 'azazaz'
+print(interleave('lzr','iad')) #  'lizard'   

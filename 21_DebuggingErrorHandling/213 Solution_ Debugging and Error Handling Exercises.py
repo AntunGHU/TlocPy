@@ -1,4 +1,4 @@
-def divide(a,b):
+def devide(a,b):
     try:
         total = a / b
     except TypeError:
@@ -11,6 +11,7 @@ def divide(a,b):
 
     # Examples
     
-    # divide(4,2) // 2
-    # divide(1,2,3) // "Please provide two arguments"
-    # divide(1,0) // "Please do not divide by zero"
+# print(devide(4,2))  # 2
+print(devide(1,2,3)) # "Please provide two integers or floats"
+                     # "TypeError: devide() takes 2 positional arguments but 3 were given"
+# print(devide(1,0)) # "Please do not divide by zero"

@@ -19,9 +19,9 @@ class Chicken:
 
 c1 = Chicken(name="Alice", species="Partridge Silkie")
 c2 = Chicken(name="Amelia", species="Speckled Sussex")
-Chicken.total_eggs #0
-c1.lay_egg()  #1
-Chicken.total_eggs #1
-c2.lay_egg()  #1
-c2.lay_egg()  #2
-Chicken.total_eggs #3
+print(Chicken.total_eggs) #0
+print(c1.lay_egg())  #1
+print(Chicken.total_eggs) #1
+print(c2.lay_egg() ) #1
+print(c2.lay_egg())  #2
+print(Chicken.total_eggs) #3

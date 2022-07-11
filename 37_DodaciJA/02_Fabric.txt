@@ -78,11 +78,9 @@ Lx # Define sets of servers as roles
 Lx env.roledefs = {
 Lx     'www': ['www1', 'www2', 'www3', 'www4', 'www5'],
 Lx     'databases': ['db1', 'db2']
-Lx }
-Lx  
+Lx } 
 Lx # Set the user to use for ssh
-Lx env.user = 'fabuser'
-Lx  
+Lx env.user = 'fabuser'  
 Lx # Restrict the function to the 'www' role (that we created above)
 Lx @roles('www')
 Lx def uptime():

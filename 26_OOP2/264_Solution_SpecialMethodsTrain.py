@@ -21,4 +21,4 @@ class Train():
 
 a_train = Train(4)
 print(a_train)  # 4 car train
-len(a_train)  # 4
+print(len(a_train)) # 4

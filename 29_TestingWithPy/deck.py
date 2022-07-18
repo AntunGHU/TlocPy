@@ -2,10 +2,9 @@ from random import shuffle
 
 
 class Card:
-
     def __init__(self, value, suit):
-        self.suit = suit
         self.value = value
+        self.suit = suit
 
     def __repr__(self):
         return f"{self.value} of {self.suit}"
@@ -15,11 +14,12 @@ class Deck:
 
     def __init__(self):
         suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
-        values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+        values = ['A', '2', '3', '4', '5', '6',
+                  '7', '8', '9', '10', 'J', 'Q', 'K']
         self.cards = [Card(suit, value) for suit in suits for value in values]
 
     def __repr__(self):
-        return "Deck of {} cards".format(self.count())
+        return f"Deck of {self.count()} cards"
 
     def count(self):
         return len(self.cards)
@@ -60,14 +60,15 @@ class Deck:
         Returns a list of Cards
         """
         return self._deal(hand_size)
-    
-d = Deck()
-d.shuffle()
-card = d.deal_card()
-print(card)     # Diamonds of Q
 
-hand = d.deal_hand(50)
-card2 = d.deal_card()
-print(card2)    # Hearts of 10
-print(d.cards)  # []
-card3 = d.deal_card()   # ValueError: All cards have been dealt
+
+# ? d = Deck()
+# ? d.shuffle()
+# ? card = d.deal_card()
+# ? print(card)     # Diamonds of Q
+
+# ? hand = d.deal_hand(50)
+# ? card2 = d.deal_card()
+# ? print(card2)    # Hearts of 10
+# ? print(d.cards)  # []
+# ? card3 = d.deal_card()   # ValueError: All cards have been dealt

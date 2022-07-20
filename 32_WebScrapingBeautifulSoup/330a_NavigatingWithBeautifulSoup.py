@@ -1,3 +1,17 @@
+# 13'14
+
+# Navigating with Beautiful Soup
+# * Via Tags
+# ? parent / parents
+# ? contents
+# ? next_sibling / next_siblings
+# ? previous_sibling / previous_siblings
+# * Via Searching
+# ? find_parent / find_parents
+# ? find_next_sibling / find_next_siblings
+# ? find_previous_sibling / find_previous_siblings
+# ? Web Scraping Example with Beautiful Soup
+
 from bs4 import BeautifulSoup
 html = """
 <!DOCTYPE html>
@@ -22,12 +36,3 @@ html = """
 """
 
 soup = BeautifulSoup(html, "html.parser")
-data = soup.find(id="first").find_next_sibling()
-print(data)
-data = soup.find(id="first").find_next_sibling().find_next_sibling()
-print(data)
-data = soup.select("[data-example]")[1].find_previous_sibling()
-print(data)
-data = soup.find("h3").find_parent()
-print(data)
-print(help(data))

@@ -22,13 +22,5 @@ html = """
 """
 
 soup = BeautifulSoup(html, "html.parser")
-data = soup.body.contents
-print(data)
-data = soup.body.contents[1].contents
-print(data)
-data = soup.body.contents[1].next_sibling
-print(data)
-data = soup.body.contents[1].next_sibling.next_sibling
-print(data)
-data = soup.find(class_="special").parent.parent
-print(data)
+d = soup.select("[data-example]")
+print(d)

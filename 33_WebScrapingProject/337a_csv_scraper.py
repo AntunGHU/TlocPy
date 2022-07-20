@@ -3,6 +3,7 @@
 # kopiramo sve od početka do def start_game() u taj novi py-fajl
 # svaki put kad run-a updejtamo nove citate i upišemo u csv-fajl
 # izmjena koja ce uciniti da run ne skrejpa svaki put - refactoring
+
 import requests
 from bs4 import BeautifulSoup
 from csv import DictWriter
@@ -22,9 +23,9 @@ def scrape_quotes():
         quotes = soup.find_all(class_="quote")
         for quote in quotes:
             all_quotes.append({
-                "text":quote.find(class_="text").get_text(),
-                "author":quote.find(class_="author").get_text(),
-                "bio-link":quote.find("a")["href"]      
+                "text": quote.find(class_="text").get_text(),
+                "author": quote.find(class_="author").get_text(),
+                "bio-link": quote.find("a")["href"]
             })
         next_btn = soup.find(class_="next")
         url = next_btn.find("a")["href"] if next_btn else None
@@ -32,6 +33,8 @@ def scrape_quotes():
     return all_quotes
 
 # write quotes to csv-fajl
+
+
 def write_quotes(quotes):
     with open("quotes.csv", "w") as file:
         headers = ["text", "author", "bio-link"]
@@ -39,6 +42,7 @@ def write_quotes(quotes):
         csv_writer.writeheader()
         for quote in quotes:
             csv_writer.writerow(quote)
-            
+
+
 quotes = scrape_quotes()
 write_quotes(quotes)

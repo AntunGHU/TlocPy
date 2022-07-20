@@ -7,8 +7,7 @@
 # RE CheetSheet: "http://www.rexegg.com/regex-quickstart.html"
 
 # ostali zancajniji simboli:
-# SOME REGEX SYNTAX:
-# Some Characters
+# ? SOME REGEX SYNTAX:
 \d digit 0-9
 \w letter, digit, or underscore
 \s whitespace character

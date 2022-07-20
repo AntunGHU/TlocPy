@@ -52,3 +52,25 @@ with open("fighters2.csv") as file:
     next(csv_reader)
     for fighter in csv_reader:
         print(f"{fighter[0]} is from {fighter[1]}")
+
+
+# * Slides
+# Opce
+# ? CSV files are a common file format for tabular data
+# ? We can read CSV files just like other text files
+# ? Python has a built-in CSV module to read/write CSVs more easily
+
+# CSV Module
+# ? reader - lets you iterate over rows of the CSV as lists
+# ? DictReader - lets you iterate over rows of the CSV as OrderedDicts
+# ? Keys are determined by the header row
+# ? An OrderedDict is like a dictionary, but it remembers the order in which keys were inserted
+
+# Other Delimiters
+# ? Readers accept a delimiter kwarg in case your data isn't separated by commas.
+from csv import reader
+with open("example.csv") as file:
+    csv_reader = reader(file, delimiter="|")
+    for row in csv_reader:
+        # each row is a list!
+        print(row)

@@ -1,3 +1,6 @@
+# This is another trickier exercise.  Don't feel bad if you get stuck or need to move on and come back later on!
+# Write a function called mode. This function accepts a list of numbers and returns the most frequent number in the list of numbers. You can assume that the mode will be unique
+
 def mode(collection):
     count = {val: collection.count(val) for val in collection}
     # find the highest value (the most frequent number)
@@ -6,5 +9,6 @@ def mode(collection):
     correct_index = list(count.values()).index(max_value)
     # finally, return the correct key for the correct index (we have to convert cou)
     return list(count.keys())[correct_index]
-    
-mode([2,4,1,2,3,3,4,4,5,4,4,6,4,6,7,4]) # 4
+
+
+print(mode([2, 4, 1, 2, 3, 3, 4, 4, 5, 4, 4, 6, 4, 6, 7, 4]))  # 4

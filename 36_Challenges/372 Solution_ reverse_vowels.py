@@ -1,3 +1,5 @@
+# Write a function called reverse_vowels. This function should reverse the vowels in a string. Any characters which are not vowels should remain in their original position. You should not consider "y" to be a vowel.
+
 def reverse_vowels(s):
     vowels = "aeiou"
     string = list(s)
@@ -12,9 +14,11 @@ def reverse_vowels(s):
             i += 1
             j -= 1
     return "".join(string)
-    
-reverse_vowels("Hello!") # "Holle!" 
-reverse_vowels("Tomatoes") # "Temotaos" 
-reverse_vowels("Reverse Vowels In A String") # "RivArsI Vewols en e Streng"
-reverse_vowels("aeiou") # "uoiea"
-reverse_vowels("why try, shy fly?") # "why try, shy fly?"
+
+
+print(reverse_vowels("Hello!"))  # "Holle!"
+print(reverse_vowels("Tomatoes"))  # "Temotaos"
+# "RivArsI Vewols en e Streng"
+print(reverse_vowels("Reverse Vowels In A String"))
+print(reverse_vowels("aeiou"))  # "uoiea"
+print(reverse_vowels("why try, shy fly?"))  # "why try, shy fly?"

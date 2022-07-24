@@ -30,7 +30,7 @@
 # Pipenv - 2020.8.13
 
 # * Pip
-# Pip can be used to install and manage packages which are not part of the standard Python installation. Let's see how to use # install and use it now.
+# Pip can be used to install and manage packages which are not part of the standard Python installation. Let's see how to use install and use it now.
 
 # Installation: To install pip in your system, open the terminal and type the command
 # ?  sudo apt install python3-pip
@@ -38,11 +38,11 @@
 # ? pip3 install <package_name>
 # For example, to install the latest version of Django you can use the command
 # ? pip3 install django
-# If you want to install a specific version of a package that is possible too. For example, to install version 2.1.1 of Django you # can use the command
+# If you want to install a specific version of a package that is possible too. For example, to install version 2.1.1 of Django you can use the command
 # ? pip3 install django==2.1.1
 # List installed python packages: To see the list of Python packages installed in your system, use the command
 # ? pip3 list
-# This will print the list of packages installed in your system along with their versions. The output will be similar to the one # given below.
+# This will print the list of packages installed in your system along with their versions. The output will be similar to the one given below.
 # Package         Version
 # --------------- ----------
 # appdirs         1.4.3

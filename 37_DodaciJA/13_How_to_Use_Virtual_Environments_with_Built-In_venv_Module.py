@@ -10,7 +10,7 @@
 # ? cat requirements.txt
 # ? deactivate
 
-# ako nam vise netrena brisemo mapu
+# ako nam vise netreba brisemo mapu
 # ? rm -rf project_env/
 
 # opce:

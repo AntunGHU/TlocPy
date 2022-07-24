@@ -11,7 +11,7 @@
 # aktiviranje
 # ? imevenvmape\Scripts\activate    # (env1) C:\User...
 
-# instalcacija paketa
+# instalacija paketa
 # ? pip install ...
 
 # deaktivacija kroz napustanje terminala ili k-dom:

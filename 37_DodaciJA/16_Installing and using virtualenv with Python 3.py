@@ -1,6 +1,6 @@
 # html
 
-# Installing and using virtualenv with Python 3
+# * Installing and using virtualenv with Python 3
 
 # Overview
 # Virtualenv is a tool used to create an isolated Python environment. This environment has its own installation directories that doesn't share libraries with other virtualenv environments (and optionally doesn't access the globally installed libraries either).

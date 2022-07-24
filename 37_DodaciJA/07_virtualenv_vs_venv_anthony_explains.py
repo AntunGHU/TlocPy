@@ -7,7 +7,7 @@
 
 # nacili kako vidjeti sto sve ulazi u globalnu instalaciju python-a koja dolazi sa ubuntu 2004 kdom:
 # ? dpkg - l | python3-
-# sto izbacuje vrlo dugacak spisak, dole na kraju kojeg ipšak necu staviti
+# sto izbacuje vrlo dugacak spisak, dole na kraju kojeg ipak necu staviti
 
 # kreiranje env-a
 # podrazumjeva se da to radimo sa termom unutar mape projekta i da smo prethodno vec instalirali "virtualenv" paket

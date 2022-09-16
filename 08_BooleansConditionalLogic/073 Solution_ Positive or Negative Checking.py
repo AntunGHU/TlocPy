@@ -1,4 +1,4 @@
-# NO TOUCHING ======================================
+
 from random import randint
 x = randint(-100, 100)
 while x == 0:  # make sure x isn't zero
@@ -6,12 +6,8 @@ while x == 0:  # make sure x isn't zero
 y = randint(-100, 100)
 while y == 0:  # make sure y isn't zero
     y = randint(-100, 100)
-# NO TOUCHING ======================================
 
-
-# Don't change the print statements so the tests can pass!
-
-# YOUR CODE GOES HERE vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+print(x, y)
 
 
 if x > 0 and y > 0:
@@ -22,5 +18,3 @@ elif x > 0 and y < 0:
     print("x is positive and y is negative")
 else:
     print("y is positive and x is negative")
-    
-# YOUR CODE GOES HERE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

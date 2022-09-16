@@ -3,7 +3,11 @@
 # 21 pice i normalan ulaz
 # > 18, premlad, nema ulaza
 
-age = input("Kolko si star? \n")
+age = int(input("Kolko si star? \n"))
 
-if age:
-    age = int(age)
+if age < 18:
+    print("premlad, nema ulaza")
+elif 18 <= age <= 21:
+    print("narukvica")
+else:
+    print("pice i normalan ulaz")

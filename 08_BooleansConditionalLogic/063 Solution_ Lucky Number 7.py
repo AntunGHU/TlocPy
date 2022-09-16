@@ -1,9 +1,8 @@
-# NO TOUCHING PLEASE---------------
-from random import randint
-choice = randint(1,10)
-# NO TOUCHING PLEASE---------------
 
-# YOUR CODE GOES HERE:
+from random import randint
+choice = randint(1, 10)
+
+
 if choice == 7:
     print("lucky")
 else:

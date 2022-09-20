@@ -3,6 +3,7 @@ def last_element(l):
         return l[-1]
     except IndexError as e:
         return None
-        
-last_element([1,2,3]) # 3
-last_element([]) # None
+
+
+print(last_element([1, 2, 3]))  # 3
+print(last_element([]))  # None

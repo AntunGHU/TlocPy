@@ -4,5 +4,6 @@ def multiply_even_numbers(lst):
         if val % 2 == 0:
             total = total * val
     return total
-    
-multiply_even_numbers([2,3,4,5,6]) # 48
+
+
+print(multiply_even_numbers([2, 3, 4, 5, 6]))  # 48

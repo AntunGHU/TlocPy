@@ -2,13 +2,16 @@
 def outer():
     '''pokusaj da se vidi ishod doc-string-doca'''
     count = 0
+
     def inner():
         nonlocal count
-        count +=1
+        count += 1
         return count
     return inner()
+
+
 print(outer())
-print(outer.__doc__)    #! zakljucak, dunder se poziva bez ()
+print(outer.__doc__)  # ! zakljucak, dunder se poziva bez ()
 
 #! RECUP
 # funs izvode kod primajuci inpute i returnajuci sa return
